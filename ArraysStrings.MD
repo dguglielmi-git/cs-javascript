@@ -1,4 +1,4 @@
-##Javascripts Arrays/Strings methods
+## Javascripts Arrays/Strings methods
 
 ### Index:
 [.push()](#push)
