@@ -507,6 +507,7 @@ console.log(arr.find( (e) => e>20));
 
     - .findIndex()
 
+
 ```
 const arr = [1,20,32,43];
 
@@ -519,6 +520,7 @@ console.log(arr.findIndex( (e) => e>20));
 ### forEach()
 
     - .forEach()
+
 
 ```
 const arr = [1,2,3,4,5];
@@ -574,6 +576,7 @@ Example:
 ### JSON.stringify()
 
     - .JSON.stringify()
+
 
 ```
 JSON.stringify({"key": "value"})
