@@ -1,8 +1,8 @@
 ## Javascripts Arrays/Strings methods
 
 ### Index:
-[.push()](#push())
-[.pop()](#pop())
+[.push()](#push)
+[.pop()](#pop)
 
 
 
