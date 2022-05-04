@@ -1,5 +1,17 @@
 ## Javascripts Arrays/Strings methods
 
+### Most Frequent Functions
+- [.map()](#map)
+- [.reduce()](#reduce)
+- [.split()](#split)
+- [.filter()](#filter)
+- [.join()](#join)
+- [.sort()](#sort)
+- [.every()](#every)
+- [.some()](#some)
+- [.concat()](#concat)
+- [.includes()](#includes)
+
 ### Index:
 - [.push()](#push)
 - [.pop()](#pop)
@@ -9,17 +21,14 @@
 - [.slice()](#slice)
 - [.substr()](#substr)
 - [.substring()](#substring)
-- [.concat()](#concat)
 - [.padStart()](#padstart)
 - [.padEnd()](#padend)
 - [.charAt()](#charat)
 - [.charCodeAt()](#charcodeat)
-- [.split()](#split)
 - [.isArray()](#isarray)
 - [.length](#length)
 - [.endsWith()](#endswith)
 - [.fromCharCode()](#fromcharcode)
-- [.includes()](#includes)
 - [.indexOf()](#indexof)
 - [.lastIndexOf()](#lastindexof)
 - [.localeCompare()](#localecompare)
@@ -30,17 +39,105 @@
 - [.reverse()](#reverse)
 - [.copyWithin()](#copywithin)
 - [.entries()](#entries)
-- [.every()](#every)
 - [.fill()](#fill)
-- [.filter()](#filter)
 - [.find()](#find)
 - [.findIndex()](#findindex)
 - [.forEach()](#foreach)
-- [.join()](#join)
 - [.keys()](#keys)
 - [.JSON.stringify()](#stringify)
 - [.JSON.parse()](#parse)
 
+
+### map()
+
+```js
+const data = [
+  {
+    "id": 1,
+    "name": "Daniel",
+    "lastname": "Guglielmi"
+  },
+  {
+    "id": 2,
+    "name": "John",
+    "lastname": "Smith"
+  }
+];
+
+data.map( (user) => console.log(user.name));
+
+// Result:
+'Daniel'
+'John'
+```
+
+
+### reduce()
+
+```js
+const users = [
+  {
+    "id": 1,
+    "username": "dguglielmi",
+    "age": 18
+  },
+  {
+    "id": 2,
+    "username": "jsmith",
+    "age": 20
+  }
+];
+
+const sumAges = users.reduce( (sum, user) => sum+ user.age,0);
+console.log(sumAges);
+
+// Result:
+38
+```
+
+#### Searching Major with reduce()
+```js
+const numbers = [20,300,78,98,157,304];
+
+console.log(numbers.reduce( (prevValue, currentValue) => (currentValue>prevValue) ? currentValue : prevValue));
+
+// Result:
+304
+```
+
+
+### sort()
+
+#### Ascending Sort
+```js
+const arr = [1,2,3,5,4];
+
+console.log(arr.sort( (a,b) => b-a));
+
+// Result:
+[ 5, 4, 3, 2, 1 ]
+```
+
+#### Reverse Sort
+```js
+const arr = [1,2,3,5,4];
+
+console.log(arr.sort( (a,b) => a-b));
+
+// Result:
+[ 1, 2, 3, 4, 5 ]
+```
+
+### some()
+
+```js
+const numbers = [10, 50, 8, 220, 110, 11];
+
+console.log(numbers.some( (currentVal) => currentVal<10));
+
+// Result:
+true         // Some values are lower than 10.
+```
 
 
 ### push()
@@ -54,6 +151,7 @@ console.log(array);
 [1,2,3,4,5]    // '5' was added to the array.
          ^
 ```
+
 
 ### pop()
 ```js
