@@ -1,16 +1,18 @@
 ## Javascripts Arrays/Strings methods
 
 ### Most Frequent Functions
-- [.map()](#map)
-- [.reduce()](#reduce)
-- [.split()](#split)
-- [.filter()](#filter)
-- [.join()](#join)
-- [.sort()](#sort)
-- [.every()](#every)
-- [.some()](#some)
-- [.concat()](#concat)
-- [.includes()](#includes)
+  | Function | Sintaxis |
+  |---------|----------|
+  |[.map()](#map) | |
+  |[.reduce()](#reduce) | |
+  |[.split()](#split) | |
+  |[.filter()](#filter) | |
+  |[.join()](#join) | |
+  |[.sort()](#sort) | |
+  |[.every()](#every) | |
+  |[.some()](#some) | |
+  |[.concat()](#concat) | |
+  |[.includes()](#includes) | |
 
 ### Index:
 - [.push()](#push)
