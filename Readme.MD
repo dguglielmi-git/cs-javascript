@@ -450,10 +450,13 @@ console.log(String.fromCharCode(65));
 
 ```js
 const str = "abcd";
+const arr = [1,2,3];
 
 console.log(str.includes('ab'));
+console.log(arr.includes(1));
 
 true    // indicates that 'ab' is included in the string.
+true    // indicates that 1 is included in the array.
 ```
 
 
